@@ -1,161 +1,120 @@
 <html>
-    <head>
-          <title>foodie!-homepage</title>
-          <link rel="icon" href="images/f-symbol.jpeg"/>
-          <link rel="stylesheet" href="foodie.css"/>
-    </head>
-    <body>
-        <header>
-             <div id="brand">
-                foodie app!
-             </div>
-             <div id="social"> 
-                <a href="https://www.facebook.com/meerath.konapalli" target="_blank">
-                   <img src="images/fb.png" alt="facebook"  class="socialimg"/>  
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="images/yt.png" alt="youtube"  class="socialimg"/>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="images/Instagram.png" alt="instagram"  class="socialimg"/>
-                </a>
-             </div>
-        </header>
 
-        <div id="search"> 
-            <div id="logo">
-               <span>F!</span>
-            </div>
-            <span>Find the best food you like....</span>
-            <div id="dropdown">
-            <select>
-                <option>---SELECT CITY---</option>
-                <option>---Hyderabad---</option>
-                <option>---Visakhapatnam---</option>
-                <option>---Dehli---</option>
-                <option>---Mumbai---</option>
-                <option>---Chennai---</option>
-                <option>---Banglore---</option>
-                <option>---Kolkata---</option>
-                <option>---Kurukshetra---</option>
-            </select>
+<head>
+    <title>foodie!-homepage</title>
+    <link rel="icon" href="images/f-symbol.jpeg" />
 
-            <select id="restaurants">
-                <option>---SELECT RESTAURANTS---</option>
-                <option>---Tycoon---</option>
-                <option>---Taj--</option>
-                <option>---Paradise---</option>
-                <option>---Green Park---</option>
-                <option>---Non Veg---</option>
-                <option>---Food Point---</option>
-                <option>---Food Cave---</option>
-                <option>---Biriyani Point--</option>
-            </select>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-1">foodie app!</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header style="width: 100%; height: 500px; background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/non\ veg.jpg); background-repeat: no-repeat; background-size: 100% 500px;" class="container-fluid d-flex flex-column align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center p-2 bg-light text-dark rounded-circle"
+            style="width: 125px; height: 125px; font-size: 52px;">F!</div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="fs-3 text-white">Find the best food you like....</div>
+            <div class="d-flex flex-md-row align-items-center justify-content-space-around">
+                <div class="btn-group">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuClickableOutside"
+                        data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                        Select a city from the list...
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                        <li class="dropdown-item">Delhi</li>
+                        <li class="dropdown-item">Visakhapatnam</a></li>
+                        <li class="dropdown-item">Kurukshetra</a></li>
+                        <li class="dropdown-item">Kolkata</a></li>
+                        <li class="dropdown-item">Ambala</a></li>
+                        <li class="dropdown-item">Anakapalli</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group m-2">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuClickableOutside"
+                        data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                        restaurants
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                        <li class="dropdown-item">Delhi</li>
+                        <li class="dropdown-item">Visakhapatnam</a></li>
+                        <li class="dropdown-item">Kurukshetra</a></li>
+                        <li class="dropdown-item">Kolkata</a></li>
+                        <li class="dropdown-item">Ambala</a></li>
+                        <li class="dropdown-item">Anakapalli</a></li>
+                    </ul>
+                </div>
 
             </div>
         </div>
+    </header>
 
-        <div id="quicksearch">
-            <div id="title">
-              <span>Quick Search</span>
-              <p>Find the best by type of meal</p>
-            </div>
-            <div class="card">
-                <a href="../list/listing.html" target="_blank">
-                <div> 
-                    <img src="images/dosa.jpg" alt="dosa" class="pics" />
-                </div>
-                <div id="description">
-                    <div class="heading">
-                       Breakfast
+    <div class="container-fluid" style="max-width: 86rem;">
+            <h1 class="fs-1 m-3">Quick Search</h1>
+            <p class="fs-4 mx-3">Find the best by type of meal</p>
+        <div class="row my-3">
+            <div class="col-sm">
+                <div class="card m-3" style="width: 18rem;height:26rem">
+                    <img src="images/dosa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-2">BREAKFAST!</h5>
+                        <p class="card-text fs-5">All happiness depends on leisurely breakfast</p>
+                        <a href="/list/listing.html" class="btn btn-warning" target="_blank">BOOK NOW!</a>
                     </div>
-                   <div class="subheading">
-                        <p>Best deal for today's breakfast</p>
-                        <p class="quotes">"All happiness depends on a leisurely breakfast"</p>
-                   </div>
-                        
                 </div>
-            </a>
             </div>
-            <div class="card">
-                <a href="../list/lunch.html" target="_blank">
-                <div> 
-                    <img src="images/lunch.jpg" alt="dosa" class="pics" />
-                </div>
-                <div id="description">
-                    <div class="heading">
-                        Lunch
+            <div class="col-sm">
+                <div class="card m-3" style="width: 18rem;height:26rem">
+                    <img src="images/chicken.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-2">LUNCH!</h5>
+                        <p class="card-text fs-5">There is no such thing as a free lunch</p>
+                        <a href="/list/lunch.html" class="btn btn-warning" target="_blank">BOOK NOW!</a>
                     </div>
-                   <div class="subheading">
-                        <p>Best deal for today's Lunch</p>
-                        <p class="quotes">"There is no such thing as a free lunch"</p>
-                   </div>
-                        
                 </div>
-               </a>
             </div>
-            <div class="card">
-                <a href="../list/snacks.html" target="_blank">
-                <div> 
-                    <img src="images/snacks (1).jpg" alt="dosa" class="pics" />
-                </div>
-                <div id="description">
-                    <div class="heading">
-                        Snacks
+            <div class="col-sm">
+                <div class="card m-3" style="width: 18rem;height:26rem">
+                    <img src="images/snacks (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-3">SNACKS!</h5>
+                        <p class="card-text fs-5">Enjoy your evening with a good snacks.</p>
+                        <a href="/list/snacks.html" class="btn btn-warning" target="_blank">BOOK NOW!</a>
                     </div>
-                   <div class="subheading">
-                        <p>Best deal for today's Snacks</p>
-                        <p class="quotes">"Whatever happens in your life, just have a snack"</p>
-                   </div>
-                        
                 </div>
-               </a>
             </div>
-            <div class="card">
-                <a href="../list/dinner.html" target="_blank">
-                <div> 
-                    <img src="images/dinner.jpg" alt="dosa" class="pics" />
-                </div>
-                <div id="description">
-                    <div class="heading">
-                        Dinner
+            <div class="col-sm">
+                <div class="card m-3" style="width: 18rem;height:26rem">
+                    <img src="images/dinner.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fs-3">DINNER!</h5>
+                        <p class="card-text fs-5">Dinner is the place where the magic happens in the kitchen.</p>
+                        <a href="/list/dinner.html" class="btn btn-warning" target="_blank">BOOK NOW!</a>
                     </div>
-                   <div class="subheading">
-                        <p>Best deal for today's Dinner</p>
-                        <p class="quotes">"The dinner is where the magic happens in the kitchen"</p>
-                   </div>
-                        
                 </div>
-            </div></a>
-          
-       </div>
-
-        <footer>
-        <hr/>
-            <h3>&copy;Meerath Pvt lim</h3>
-            <div class="details">
-               <ul>
-                  <li>contact us</li>
-                  <li>About us</li>
-                  <li>Customer Support</li>
-               </ul>
-           </div>
-           <div class="details">
-            <ul>
-               <li>contact us</li>
-               <li>About us</li>
-               <li>Customer Support</li>
-            </ul>
+            </div>
         </div>
-        <div class="details noBorder">
-            <ul>
-               <li>contact us</li>
-               <li>contact us</li>
-               <li>Customer Support</li>
-            </ul>
-        </div>
-          
-        </footer>
+    </div>
 
-    </body>
+    <footer class="py-3 bg-dark">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Support</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2021 Meerath Pvt Ltd.</p>
+    </footer>
+
+</body>
+
 </html>
